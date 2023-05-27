@@ -1,87 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-
-  <title>THB Gallery</title>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-
-    body {
-      border-radius: 30%;
-      margin: 30px;
-      padding:10%;
-      background-image: url(img_thb.jpg.png);
-      background-attachment:fixed;
-      background-repeat:no-repeat;
-      background-position: center;
-      background-color:#a70a0a;
-      align-items: center;
-      text-align:center
-    }
-
-    div.gallery {
-      margin: 20px;
-      border: 1px solid #a70a0a;
-      float: center;
-      width: 50px;
-      padding: 25px;
-    }
-
-    div.gallery:hover {
-      border: 1px solid #601717;
-    }
-
-    div.gallery img {
-      width: 30%;
-      height: auto;
-    }
-
-    div.desc {
-      padding: 30px;
-      text-align: center;
-      font-size: 40px;
-    }
-  </style>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The Hobby Barbie</title>
 </head>
 
-<body>
+    
+<body class="bg-fixed bg-contain bg-no-repeat bg-center backdrop-opacity-10 bg-red-600/70 font-serif" 
+style="background-image: url(img_thb.jpg.png)">
 
-  <nav>
+<header>
 
-  </nav>
+    <nav class="text-center font-serif hover-red fixed p-2 h-40px w-full text-red-700">
+        <ul class="flex justify-between">
+            <li class="inline"><a href="index.html">Home</a></li>
+            <li class="inline"><a href="menu.html">Menu</a></li>
+            <li class="inline"><a href="gallery.html">Gallery</a></li>
+            <li class="inline"><a href="https://www.yelp.com/biz/the-hobby-barbie-boston#reviews">Reviews</a></li>
+        </ul>
+    </nav>
 
-   <div class="gallery">
-    <a target="_blank" href="img_hearts.jpg">
-        <img src="img_hearts.jpg" alt="braids with hearts" width="60" height="40">
-    </a>
-    <div class="desc">Fulani with Design</div>
-  </div>
+</header>
 
-  <div class="gallery">
-    <a target="_blank" href="img_kasy.jpg">
-      <img src="img_kasy.jpg" alt="kasy braids" width="60" height="40">
-    </a>
-    <div class="desc">Half Braid Child Style</div>
-  </div>
 
-  <div class="gallery">
-    <a target="_blank" href="img_self.jpg">
-      <img src="img_self.jpg" alt="The Stylist" width="60" height="40">
-    </a>
-    <div class="desc">Singles in Natural Hair</div>
-  </div>
+<div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12 space-x-5">
 
-  <div class="gallery">
-    <a target="_blank" href="img_hearts2.jpg">
-      <img src="img_hearts2.jpg" alt="Mountains" width="60" height="40">
-    </a>
-    <div class="desc">Women Cornrow with Design</div>
-  </div>
+    <div class="-m-1 flex flex-wrap md:-m-2 p-10 ">
+    <h1 class="mx-auto  flex text-center text-2xl text-black bold p-5">Fulani With Design</h1> 
+      <div class="flex w-full flex-wrap">
+        <div class="w-full md:p-2 p-5 ">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-cover object-center"
+            src="img_hearts.jpg" />
+        </div>
 
-</body>
+    </div>
+
+    <br>
+
+    <h1 class="flex mx-auto  text-center text-2xl text-black bold p-5">Half Braid Child Style</h1>
+    <div class="flex w-full flex-wrap">
+   
+    <div class="w-full md:p-2 p-5">
+        <img
+        alt="gallery"
+        class="block h-full w-full rounded-lg object-cover object-center"
+        src="img_kasy.jpg" />
+
+    </div>
+    </div>
+
+    <br>
+        
+    
+    <div class="flex w-full flex-wrap">
+    <h1 class="h-fit w-full mx-auto  flex text-center text-2xl text-black bold p-5">Singles in Natural Hair</h1>    
+    <div class="w-full md:p-2 p-5">
+        <img
+        alt="gallery"
+        class="block h-full w-full rounded-lg object-cover object-center"
+        src="img_self.jpg" />
+
+    </div>
+    </div>
+
+    <br>
+
+    
+    <div class="flex w-full flex-wrap">
+    <h1 class="mx-auto  flex text-center text-2xl text-black bold p-5">Women Cornrow With Design</h1>    
+    <div class="w-full md:p-2 p-5"> 
+        <img
+        alt="gallery"
+        class="block h-full w-full rounded-lg object-cover object-center"
+        src="img_hearts2.jpg" />
+    </div>
+    </div>
+
+    </div>
+</div>
+
+    <footer class="text-center font-serif hover-red text-red-700 fixed p-2 h-40px w-full">
+
+        <ul class="flex justify-between">
+            <li><a href="Subscribe.html">Subscribe</li></a>
+            <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Privacy</li></a>
+            <li><a href="https://www.instagram.com/thehobbybarbie/">Instagram</li> </a>
+            <li><a href="https://thehobbybarbie@gmail.com">Contact Us</a></li>
+         </ul>
+
+    </footer>
+
+  </body>
+
+<br>
+<br>
 
 </html>
