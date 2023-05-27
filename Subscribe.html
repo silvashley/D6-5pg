@@ -1,108 +1,72 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-  <title>THB Subscribe</title>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-
-        body {
-            border-radius: 30%;
-            margin: 30px;
-            padding:10%;
-            background-image: url(img_thb.jpg.png);
-            background-attachment:fixed;
-            background-repeat:no-repeat;
-            background-position: center;
-            background-color:#a70a0a;
-            align-items: center;
-            text-align:center
-        }
-      
-        .nav{
-            background-attachment: fixed;
-            background-color: #a2a4a2;
-            text-align: center;
-            font-family:Arial, Helvetica, sans-serif     
-            padding: 10%;
-            height:40px;
-            width:100%;
-            font-size:40px;
-        }
-
-        ul{
-            list-style-type: none
-        }
-
-        li{
-            display:inline;
-            padding: 5%;
-            }
-
-
-        .footer {
-            background-color: #959795;
-            padding: 25px;
-            text-align: center;
-            font-size: 20px;
-      }
-    </style>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Subscribe</title>
 </head>
 
-<body>
+<body   class="bg-fixed bg-contain bg-no-repeat bg-center backdrop-opacity-10 bg-red-600/70 font-serif m-10 p-10 align-items-center text-center" 
+        style="background-image: url(img_thb.jpg.png)">
 
 
-    <div class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Menu.html">Menu</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="https://www.yelp.com/biz/the-hobby-barbie-boston#reviews">Reviews</a></li>
-        </ul>
-      </div>
+<header>
+
+    <nav class="text-center font-serif hover-red fixed p-2 h-40px w-full text-black">
+        <ul class="flex justify-between">
+            <li class="inline"><a href="index.html">Home</a></li>
+            <li class="inline"><a href="menu.html">Menu</a></li>
+            <li class="inline"><a href="gallery.html">Gallery</a></li>
+            <li class="inline"><a href="https://www.yelp.com/biz/the-hobby-barbie-boston#reviews">Reviews</a></li>
+            </ul>
+    </nav>
     
-<br>
-<br>
-<br>
-<br>
+    <br>
+    
+    <h1 class="p-10 text-center font-cambria text-4xl text-black">
+        <a href= "https://www.instagram.com/thehobbybarbie/">Subscribe to Our Email List
+        </a>
+    </h1>
+    
+</header>
 
-    <h2 style= color:#a70a0a>Subscribe to Our Email List </h2>
-<br>
-<br>
-    <form action="/action_page.php">
-     <label for="fname">Full Name:</label><br>
-     <input type="text" id="fname" name="fname" value="John"><br>
-     <label for="lname">Email Address:</label><br>
-     <input type="text" id="lname" name="lname" value="Doe"><br><br>
-     <input type="submit" value="Submit">
-    </form> 
+<main>
 
-<br>
+    <br>
+    <br>
+    
+    <!-- <h2 style="text-3xl color-black">Subscribe to Our Email List </h2> -->
+    <br>
+    <div class="align-items-center border-black border-2 p-5 rounded-md listing space-x-5 bg-purple-300/75">
+        <form action="/action_page.php">
+            <label for="fname">Full Name:</label><br>
+            <input class="p-3 border-black border-2 rounded-lg" type="text" id="fname" name="fname" value="John"><br>
+            <br>
+            <label for="lname">Email Address:</label><br>
+            <input class="p-3 border-black border-2 rounded-lg" type="text" id="lname" name="lname" value="@email.com"><br><br>
 
-    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+            <input class="p-3 border-black border-2 rounded-full bg-black text-white" type="submit" value="Submit">
+        </form> 
+    </div>
 
-<br>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
 
-    <div class="footer">
-        <ul>
-          <li><a href="Subscribe.html">Subscribe</li></a>
-          <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Privacy</li></a>
-          <li><a href="https://www.instagram.com/thehobbybarbie/">Instagram</li> </a>
-          <li><a href="https://thehobbybarbie@gmail.com">Contact Us</a></li>
-       </ul>
-      </div>
+    <footer class="text-center font-serif hover-red text-red-700 fixed p-2 h-40px w-full">
 
+        <ul class="flex justify-between">
+                <li><a href="Subscribe.html">Subscribe</li></a>
+                <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Privacy</li></a>
+                <li><a href="https://www.instagram.com/thehobbybarbie/">Instagram</li> </a>
+                <li><a href="https://thehobbybarbie@gmail.com">Contact Us</a></li>
+        </ul>
+    
+    </footer>
+
+</main>
+    
 </body>
-
-
-
 </html>
